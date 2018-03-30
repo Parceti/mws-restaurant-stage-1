@@ -75,6 +75,13 @@
   <!-- Google Maps -->
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUZ4Yh5DeANGrB1mqr9TDWtfLZoKeDuX8&libraries=places&callback=initMap"></script>
   <!-- End scripts -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register('/js/sw.js')
+        .then(function () { console.log("Service Worker Registered"); });
+    }
+  </script>
 
 </body>
 
