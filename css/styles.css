@@ -353,3 +353,21 @@ nav h1 a {
 #restaurant-hours td {
   color: #666;
 }
+
+/*Accessibility*/
+.skip {
+  position: absolute;
+  font-weight: bold;
+  left: 0;
+  top: -9999px;
+}
+.skip:focus {
+  top: 0;
+  background-color: red;
+  color: white;
+}
+
+.filter-options select:focus {
+  outline: none;
+  box-shadow: 0 0 0px 2px darkblue;
+}
