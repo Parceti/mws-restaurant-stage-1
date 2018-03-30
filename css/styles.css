@@ -356,10 +356,11 @@ nav h1 a {
 
 /*Accessibility*/
 .skip {
-  position: absolute;
+  position: fixed;
   font-weight: bold;
   left: 0;
   top: -9999px;
+  z-index: 10001;
 }
 .skip:focus {
   top: 0;
